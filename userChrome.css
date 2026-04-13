@@ -1,4 +1,5 @@
-/* === GLOBAL LOWERCASE TAB TITLES - OVERRIDE FOR ALL SINE MODS INCLUDING ZENLEAP === */
+CSS/* === FULLY LOWERCASE TAB TITLES - OVERRIDE FOR ALL SINE MODS INCLUDING ZENLEAP === */
+/* Targets standard Firefox/Zen tab elements */
 .tab-label,
 .tab-text,
 .tabbrowser-tab .tab-text,
@@ -11,22 +12,23 @@
   text-transform: lowercase !important;
 }
 
-/* Extra aggressive rules for Zen-specific / ZenLeap tab elements */
-.tabbrowser-tab > .tab-stack > .tab-content > .tab-label-container,
+/* Zen-specific and ZenLeap vertical/side tab selectors */
 .zen-tab-label,
 .zen-tab .tab-label,
+#zen-tabbox-wrapper .tab-label,
+.zen-sidebar-tab .tab-label,
 .tab-group-label,
-.tab-group-label-container label {
-  text-transform: lowercase !important;
-}
-
+.tab-group-label-container label,
+.tabbrowser-tab > .tab-stack > .tab-content > .tab-label-container,
 .tabbrowser-tab > .tab-stack > .tab-content > .tab-label-container > label,
 .zen-tab-label label {
   text-transform: lowercase !important;
 }
 
-/* Fallback for any deeply nested or dynamically added labels */
+/* Ultra-aggressive fallback for any tab-related labels (deeply nested or dynamically styled) */
 *[class*="tab-label"],
-*[class*="tab-text"] {
+*[class*="tab-text"],
+*[class*="zen-tab"] label,
+.tabbrowser-tab[label] * {
   text-transform: lowercase !important;
 }
