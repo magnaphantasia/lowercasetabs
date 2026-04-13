@@ -7,7 +7,7 @@
     "chrome": "userChrome.css"
   },
   "author": "magnaphantasia",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "tags": ["tabs", "lowercase", "ui", "zen"],
   "readme": "https://raw.githubusercontent.com/YOURUSERNAME/zen-lowercase-tabs/main/README.md"
 }
