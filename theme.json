@@ -1,0 +1,13 @@
+{
+  "id": "lowercase-tab-titles",
+  "name": "Lowercase Tab Titles",
+  "description": "Forces all tab titles/labels to display in lowercase letters.",
+  "homepage": "https://github.com/YOURUSERNAME/zen-lowercase-tabs",
+  "style": {
+    "chrome": "userChrome.css"
+  },
+  "author": "Your Name",
+  "version": "1.0.0",
+  "tags": ["tabs", "lowercase", "ui", "zen"],
+  "readme": "https://raw.githubusercontent.com/YOURUSERNAME/zen-lowercase-tabs/main/README.md"
+}
