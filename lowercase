@@ -1,14 +1,12 @@
-/* Best version for Sine tabs - lowercase only */
-.sine-tabs .tab,
-.sine-tab,
-.sine-tabs button,
-.sine-tabs a,
-.tab-title {
+/* Force lowercase tab titles */
+.tab-label,
+.tabbrowser-tab .tab-text,
+.tab-text {
   text-transform: lowercase !important;
-  letter-spacing: 0.04em;
 }
 
-/* Make the active tab look nice with lowercase */
-.sine-tabs .tab.active {
-  font-weight: 500;
+/* Optional: Keep the first letter capitalized (title-case style) if you prefer */
+.tab-label::first-letter,
+.tabbrowser-tab .tab-text::first-letter {
+  text-transform: uppercase !important;
 }
