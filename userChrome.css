@@ -1,15 +1,32 @@
-/* Global Force Lowercase Tab Titles - overrides all Sine mods */
+/* === GLOBAL LOWERCASE TAB TITLES - OVERRIDE FOR ALL SINE MODS INCLUDING ZENLEAP === */
 .tab-label,
-.tabbrowser-tab .tab-text,
 .tab-text,
-.tab-label-container,
+.tabbrowser-tab .tab-text,
+.tab-label-container > label,
+.tab-label-container label,
 #tab-label,
-.tab-content .tab-text {
+.tabbrowser-tab[label] .tab-text,
+.tab-content .tab-text,
+.tab-label-container .tab-text {
   text-transform: lowercase !important;
 }
 
-/* Extra aggressive rules for stubborn mods like ZenLeap */
-.tabbrowser-tab[label] .tab-text,
-.tab-label[label] {
+/* Extra aggressive rules for Zen-specific / ZenLeap tab elements */
+.tabbrowser-tab > .tab-stack > .tab-content > .tab-label-container,
+.zen-tab-label,
+.zen-tab .tab-label,
+.tab-group-label,
+.tab-group-label-container label {
+  text-transform: lowercase !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-content > .tab-label-container > label,
+.zen-tab-label label {
+  text-transform: lowercase !important;
+}
+
+/* Fallback for any deeply nested or dynamically added labels */
+*[class*="tab-label"],
+*[class*="tab-text"] {
   text-transform: lowercase !important;
 }
