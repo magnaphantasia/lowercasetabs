@@ -1,6 +1,9 @@
-/* Force lowercase tab titles */
+/* Global Force Lowercase Tab Titles - overrides all Sine mods */
 .tab-label,
 .tabbrowser-tab .tab-text,
-.tab-text {
+.tab-text,
+.tab-label-container,
+#tab-label,
+.tab-content .tab-text {
   text-transform: lowercase !important;
 }
