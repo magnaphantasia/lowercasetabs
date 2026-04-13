@@ -7,3 +7,9 @@
 .tab-content .tab-text {
   text-transform: lowercase !important;
 }
+
+/* Extra aggressive rules for stubborn mods like ZenLeap */
+.tabbrowser-tab[label] .tab-text,
+.tab-label[label] {
+  text-transform: lowercase !important;
+}
