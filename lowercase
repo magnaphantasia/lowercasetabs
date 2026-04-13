@@ -1,0 +1,14 @@
+/* Best version for Sine tabs - lowercase only */
+.sine-tabs .tab,
+.sine-tab,
+.sine-tabs button,
+.sine-tabs a,
+.tab-title {
+  text-transform: lowercase !important;
+  letter-spacing: 0.04em;
+}
+
+/* Make the active tab look nice with lowercase */
+.sine-tabs .tab.active {
+  font-weight: 500;
+}
